@@ -23,9 +23,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 30px 20px;
+      padding: 40px 20px 60px; /* padding bottom added */
       overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
     }
 
     .title {
@@ -35,7 +43,10 @@
       font-weight: 700;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
       margin-bottom: 40px;
-      line-height: 1.2;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
     }
 
     .tools {
@@ -43,16 +54,15 @@
       flex-direction: column;
       gap: 15px;
       width: 100%;
-      max-width: 340px;
     }
 
     .tools a {
       background: white;
-      padding: 14px 20px;
+      padding: 15px 20px;
       text-align: center;
       text-decoration: none;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-size: 1.1rem;
       color: #1a73e8;
       font-weight: 500;
@@ -60,19 +70,18 @@
     }
 
     .tools a:hover {
-      background: #eef5ff;
+      background: #e6f0ff;
     }
   </style>
 </head>
 <body>
-  <div class="title">
-    EzySales<br />Agent Tools
-  </div>
-
-  <div class="tools">
-    <a href="https://ezyndicalculation.netlify.app/" target="_blank">💰 NDI Calculator</a>
-    <a href="https://ezydsrcalculation.netlify.app/" target="_blank">📊 DSR Calculator</a>
-    <a href="https://ezyhomeloancalculator.netlify.app/" target="_blank">🏡 Home Loan Calculator</a>
+  <div class="container">
+    <div class="title">EzySales<br />Agent Tools</div>
+    <div class="tools">
+      <a href="https://ezyndicalculation.netlify.app/" target="_blank">💰 NDI Calculator</a>
+      <a href="https://ezydsrcalculation.netlify.app/" target="_blank">📊 DSR Calculator</a>
+      <a href="https://ezyhomeloancalculator.netlify.app/" target="_blank">🏡 Home Loan Calculator</a>
+    </div>
   </div>
 </body>
 </html>
