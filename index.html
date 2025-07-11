@@ -5,56 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EzySales Agent Tools</title>
   <style>
-    body {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  background: url('bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  color: white;
-}
-    h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #ffffff;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-  margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
-  background: linear-gradient(45deg, #ffffff, #d9edf7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      padding: 30px 15px;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
     }
-    .tools {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
+
+    .title {
+      font-size: 1.8rem;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 12px;
+      margin-bottom: 40px;
       width: 100%;
-      max-width: 400px;
+      max-width: 320px;
+      line-height: 1.4;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 340px;
+    }
+
     .tools a {
       background: white;
-      padding: 15px 20px;
+      padding: 14px 18px;
       text-align: center;
       text-decoration: none;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: 1.1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      font-size: 1rem;
       color: #1a73e8;
+      font-weight: 500;
       transition: all 0.2s ease;
     }
+
     .tools a:hover {
-      background: #e6f0ff;
+      background: #eef5ff;
     }
   </style>
 </head>
 <body>
-  <h1>EzySales Agent Tools</h1>
+  <div class="title">
+    EzySales<br />Agent Tools
+  </div>
+
   <div class="tools">
     <a href="https://ezyndicalculation.netlify.app/" target="_blank">💰 NDI Calculator</a>
     <a href="https://ezydsrcalculation.netlify.app/" target="_blank">📊 DSR Calculator</a>
